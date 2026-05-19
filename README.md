@@ -96,6 +96,9 @@ python demo_cuda.py
 
 *Note: If no CUDA GPU or compiler tools are detected in the environment, the module automatically catches the exception and falls back to PyTorch-native execution on CPU/GPU without interruption.*
 
+## Why I built this
+I was frustrated with standard PyTorch `nn.Linear` performance in high-dimensional settings, so I dug into CUDA to optimize the weight modulation process myself. This kernel is the result of that experimentation and I am sharing it to foster discussion on custom kernel optimization.
+
 ## Contact & Collaboration
 For business inquiries, research collaborations, or technical questions:
 📧 **neuralfluidity.dev@gmail.com**
